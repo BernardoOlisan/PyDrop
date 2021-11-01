@@ -15,7 +15,9 @@ print(f'[*] Listening as {SERVER_HOST}:{SERVER_PORT}')
 print("Waiting for the client to connect...")
 
 client_socket, address = s.accept()
-print(f'[+] {address} is connected.')
+hostname = socket.gethostname()
+name = socket.gethostbyname(hostname)
+print(f'[+] {hostname} | {address} is connected.')
 
 received = client_socket.recv(BUFFER_SIZE).decode()
 
