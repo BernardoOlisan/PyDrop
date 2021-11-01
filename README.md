@@ -10,7 +10,8 @@ with less effort, just as a practice.
 
 # CÓMO OBTENER TU IP
 En la consola "cmd", escribe "ipconfig", deberás encontrar el IPV4 en el caso mío es 192.168.1.93 pero el tuyo será diferente.
-Deberás colocar en la <linea 9> del archivo "client.py" el host que es tu IPV4: "host = '192.168.1.93'", CÁMBIALO CON TU IPV4.
+Deberás colocar en la <linea 9> del archivo "client.py" el host que es tu IPV4: "host = '192.168.1.93'", CÁMBIALO CON TU IPV4. 
+¡DEBE DE SER EL IPV4 DE EL DISPOSITIVO QUE ESTÁ COMO SERVIDOR!
 
 Por último el archivo se guardará en la dirección en donde se encuentra la APP, si está en el escritorio, se va a guardar ahí.
 
@@ -25,6 +26,7 @@ Si tienes problemas con el código o no entiendes algo contáctame a bernardooli
 # HOW TO GET YOUR IP
 In the console "cmd", write "ipconfig", you should find the IPV4 in my case it is 192.168.1.93 but yours will be different.
 You must put in the <line 9> of the file "client.py" the host that is your IPV4: "host = '192.168.1.93'", CHANGE IT WITH YOUR IPV4.
+¡IT MUST BE THE IPV4 OF THE DEVICE THAT IS AS A SERVER!
 
 Finally the file will be saved in the address where the APP is located, if it is on the desktop, it will be saved there.
 
