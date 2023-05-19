@@ -1,12 +1,20 @@
 import socket
 import tqdm
 import os
+import subprocess 
+import re 
 
 SEPARATOR = '<SEPARATOR>'
 BUFFER_SIZE = 4096
 
+# this function will return ipv4 address of the machine
+def get_ip() -> str:
+    command_output = subprocess.check_output('ipconfig', shell=True)
+    ip_adress = re.findall(r"IPv4. . . . . . . . . . . . . . : (\d+\.\d+\.\d+\.\d+)", command_output)[0]
+    return ip_adress
+
 s = socket.socket()
-host = '192.168.1.93'
+host = get_ip()
 port = 5001
 print(f'[+] Conneting to {host}:{port}')
 s.connect((host, port))
