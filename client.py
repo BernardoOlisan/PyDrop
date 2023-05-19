@@ -9,7 +9,8 @@ BUFFER_SIZE = 4096
 
 # this function will return ipv4 address of the machine
 def get_ip() -> str:
-    command_output = subprocess.check_output('ipconfig', shell=True)
+
+    command_output = subprocess.run(['ipconfig'], check=True, capture_output=True, text=True).stdout.decode()
     ip_adress = re.findall(r"IPv4. . . . . . . . . . . . . . : (\d+\.\d+\.\d+\.\d+)", command_output)[0]
     return ip_adress
 
