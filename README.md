@@ -1,9 +1,7 @@
 # PyDrop
-An Airdrop alternative for cross-platform users only for desktop with Python, -version 1.0
-with less effort, just as a practice.
-
-
-# Instrucciones Español
+An Airdrop alternative for cross-platform **desktop** users. Made with Python.  
+***v1.01***  
+# Instrucciones en Español
 1. Si quieres instalar el código y correrlo desde tu consola sin usar el archivo .exe, deberás instalar los siguientes modulos usando "pip install...", (tqdm, socket)
 2. versión de python 3.x. TEN CUIDADO CON LAS VERSIONES DE 3.10+ puede que no estén habilitadas para los módulos usados.
 Por último el archivo se guardará en la dirección en donde se encuentra la APP, si está en el escritorio, se va a guardar ahí.
